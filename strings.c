@@ -171,6 +171,7 @@ void my_strcat(char* result, char* add, int position)
         result[position + i] = add[i];
         i++;
     }
+    result[position + i] = '\0';
 }
 
 void my_replace(char* s, char r_sim, char p_sim)

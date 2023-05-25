@@ -76,7 +76,6 @@ int check_dom(char* s, char simbol) // mysrv.com:/Windows/
         }
         if (check_dot > 4)
             return -3;
-
         i++;
     }
     int len;
@@ -106,7 +105,7 @@ int check_ip_test(char* s) // 192.168.1.1:/test
     i++;
     if (not_lin_simbols(s) < 0)
         return -4;
-    if (i > 255)
+    if (i > 260)
         return -3;
     return 0;
 }

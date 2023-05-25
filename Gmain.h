@@ -5,8 +5,8 @@ int program();
 
 char* input(char* delim);
 
-char** check(char* s_n, char sim);
+char* check(char* s_n, char sim);
 
-char** process(char** s);
+char* process(char* s);
 
-void output(char** s);
+void output(char* s);
