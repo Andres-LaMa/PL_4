@@ -48,7 +48,9 @@ char* check(char* s_n, char sim)
                     my_strcat(result, "+", slen(result));
                 result = realloc(result, sizeof(char) * (slen(s_c) + slen(result) + 1));
                 my_strcat(result, "\\\\", slen(result));
+                char *ip = stok(s_c, ':');
                 my_strcat(result, s_c, slen(result));
+                my_strcat(result, ip, slen(result));
                 check++;
             }
         else if (my_isalpha(s_c[i]) == 0 || s_c[i] == '/')
