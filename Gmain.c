@@ -63,7 +63,9 @@ char* check(char* s_n, char sim)
                     my_strcat(result, "+", slen(result));
                 result = realloc(result, sizeof(char) * (slen(s_c) + slen(result) + 1));
                 my_strcat(result, "\\\\", slen(result));
+                char *dom = stok(s_c, ':');
                 my_strcat(result, s_c, slen(result));
+                my_strcat(result, dom, slen(result));
                 check++;
             }
         }
